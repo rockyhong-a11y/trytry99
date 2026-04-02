@@ -15,7 +15,7 @@
         .contest-item { border: 1px solid #eee; border-radius: 10px; padding: 25px; margin-bottom: 25px; background: #fff; transition: transform 0.2s; }
         .contest-item:hover { transform: translateY(-3px); border-color: var(--primary); }
         .item-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
-        .item-title { font-size: 1.3em; font-weight: 800; color: #1a1a1a; flex: 1; }
+        .item-title { font-size: 1.25em; font-weight: 800; color: #1a1a1a; flex: 1; }
         .status-tag { margin-left: 15px; padding: 4px 12px; border-radius: 20px; font-size: 0.8em; font-weight: bold; white-space: nowrap; }
         .status-ing { background: #e1f5fe; color: #01579b; }
         .status-urgent { background: #ffebee; color: #c62828; }
@@ -24,10 +24,13 @@
         .info-label { width: 100px; font-weight: bold; color: #7f8c8d; flex-shrink: 0; }
         .info-content { color: #444; }
         
-        .apply-btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background: var(--primary); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.9em; transition: 0.3s; }
+        .btn-group { display: flex; gap: 10px; margin-top: 15px; }
+        .apply-btn { flex: 1; text-align: center; padding: 10px 15px; background: var(--primary); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.9em; transition: 0.3s; }
+        .main-btn { flex: 1; text-align: center; padding: 10px 15px; background: #ecf0f1; color: #7f8c8d; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.9em; transition: 0.3s; }
         .apply-btn:hover { background: #2980b9; box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3); }
+        .main-btn:hover { background: #bdc3c7; color: white; }
 
-        @media print { .apply-btn { border: 1px solid #ddd; color: #333; } }
+        @media print { .btn-group { display: none; } }
     </style>
 </head>
 <body>
@@ -42,19 +45,12 @@
                 <div class="item-title">제4회 호국보훈 나라사랑 글짓기 대회</div>
                 <span class="status-tag status-urgent">내일 마감!</span>
             </div>
-            <div class="info-row">
-                <div class="info-label">지원자격</div>
-                <div class="info-content">서울 마포구 관내 중학생 및 동일 연령 청소년</div>
+            <div class="info-row"><div class="info-label">지원자격</div><div class="info-content">서울 마포구 관내 중학생 및 동일 연령</div></div>
+            <div class="info-row"><div class="info-label">상세소개</div><div class="info-content">시/산문 공모. 마포구청 홈페이지 고시공고란 참고.</div></div>
+            <div class="btn-group">
+                <a href="https://www.mapo.go.kr/site/main/board/notice/262521" class="apply-btn" target="_blank">🔗 상세 신청 페이지</a>
+                <a href="https://www.mapo.go.kr" class="main-btn" target="_blank">🏠 마포구청 홈</a>
             </div>
-            <div class="info-row">
-                <div class="info-label">상세소개</div>
-                <div class="info-content">나라 사랑의 마음을 담은 시/산문 공모입니다. 지역구 단위 대회라 수상 확률이 매우 높습니다.</div>
-            </div>
-            <div class="info-row">
-                <div class="info-label">접수마감</div>
-                <div class="info-content">2026. 04. 03 (금)</div>
-            </div>
-            <a href="https://www.mapo.go.kr/site/main/board/notice/262521" class="apply-btn" target="_blank">🔗 상세 공고 및 신청하기</a>
         </div>
 
         <div class="contest-item">
@@ -62,45 +58,5 @@
                 <div class="item-title">2026 경기도 공공디자인 공모전</div>
                 <span class="status-tag status-ing">준비중</span>
             </div>
-            <div class="info-row">
-                <div class="info-label">지원자격</div>
-                <div class="info-content">전국 중·고등학생 (학생부 별도 시상)</div>
-            </div>
-            <div class="info-row">
-                <div class="info-label">상세소개</div>
-                <div class="info-content">'기후위기 대응'을 위한 공공시설물 디자인 아이디어를 모집합니다. 경기도지사상 시상이 포함되어 있습니다.</div>
-            </div>
-            <div class="info-row">
-                <div class="info-label">접수마감</div>
-                <div class="info-content">2026. 06. 26 (금)</div>
-            </div>
-            <a href="https://www.gg.go.kr/menu/2161" class="apply-btn" target="_blank">🔗 상세 공고 및 신청하기</a>
-        </div>
-
-        <div class="contest-item">
-            <div class="item-header">
-                <div class="item-title">서울시 청소년 숏폼 영상 챌린지</div>
-                <span class="status-tag status-ing">접수중</span>
-            </div>
-            <div class="info-row">
-                <div class="info-label">지원자격</div>
-                <div class="info-content">서울 거주 또는 소재 학교 재학생 (중·고등부)</div>
-            </div>
-            <div class="info-row">
-                <div class="info-label">상세소개</div>
-                <div class="info-content">'나만의 서울 명소'를 주제로 한 60초 이내 영상 공모입니다. 스마트폰 촬영본으로도 충분히 지원 가능합니다.</div>
-            </div>
-            <div class="info-row">
-                <div class="info-label">접수마감</div>
-                <div class="info-content">2026. 04. 20 (월)</div>
-            </div>
-            <a href="https://www.seoul.go.kr/news/news_notice.do" class="apply-btn" target="_blank">🔗 상세 공고 및 신청하기</a>
-        </div>
-
-        <p style="text-align: center; font-size: 0.8em; color: #999; margin-top: 50px;">
-            본 리포트는 매주 월요일 10시에 자동으로 업데이트됩니다.<br>
-            PDF 저장을 원하시면 브라우저 인쇄(Ctrl+P) 메뉴를 이용하세요.
-        </p>
-    </div>
-</body>
-</html>
+            <div class="info-row"><div class="info-label">지원자격</div><div class="info-content">전국 중·고등학생 (학생부 별도)</div></div>
+            <div class="info-row"><div class="info-label">상세소개</div><div class="info-content">'기후위기 대응' 디자인. 경기도 디자인허
