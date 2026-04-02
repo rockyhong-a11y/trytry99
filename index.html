@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026 주간 공모전 리포트</title>
+    <title>2026 전국 청소년 공모전 리포트</title>
     <style>
-        :root { --primary: #3498db; --secondary: #2c3e50; --bg: #f8f9fa; }
+        :root { --primary: #3498db; --secondary: #2c3e50; --bg: #f8f9fa; --urgent: #e74c3c; }
         body { font-family: 'Pretendard', -apple-system, sans-serif; line-height: 1.7; color: #333; max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: var(--bg); }
         .report-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
         header { border-bottom: 2px solid var(--primary); margin-bottom: 30px; padding-bottom: 20px; }
@@ -16,19 +16,18 @@
         .contest-item:hover { transform: translateY(-3px); border-color: var(--primary); }
         .item-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px; }
         .item-title { font-size: 1.25em; font-weight: 800; color: #1a1a1a; flex: 1; }
-        .status-tag { margin-left: 15px; padding: 4px 12px; border-radius: 20px; font-size: 0.8em; font-weight: bold; white-space: nowrap; }
-        .status-ing { background: #e1f5fe; color: #01579b; }
-        .status-urgent { background: #ffebee; color: #c62828; }
+        .d-day-tag { margin-left: 15px; padding: 4px 15px; border-radius: 20px; font-size: 0.9em; font-weight: bold; white-space: nowrap; background: var(--urgent); color: white; }
+        .d-day-safe { background: #2ecc71; }
 
         .info-row { display: flex; margin-bottom: 8px; font-size: 0.95em; }
         .info-label { width: 100px; font-weight: bold; color: #7f8c8d; flex-shrink: 0; }
         .info-content { color: #444; }
         
-        .btn-group { display: flex; gap: 10px; margin-top: 15px; }
-        .apply-btn { flex: 1; text-align: center; padding: 10px 15px; background: var(--primary); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.9em; transition: 0.3s; }
-        .main-btn { flex: 1; text-align: center; padding: 10px 15px; background: #ecf0f1; color: #7f8c8d; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.9em; transition: 0.3s; }
+        .btn-group { display: flex; gap: 10px; margin-top: 20px; }
+        .apply-btn { flex: 2; text-align: center; padding: 12px; background: var(--primary); color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 0.95em; transition: 0.3s; }
+        .main-btn { flex: 1; text-align: center; padding: 12px; background: #f1f2f6; color: #57606f; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 0.95em; transition: 0.3s; }
         .apply-btn:hover { background: #2980b9; box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3); }
-        .main-btn:hover { background: #bdc3c7; color: white; }
+        .main-btn:hover { background: #dfe4ea; }
 
         @media print { .btn-group { display: none; } }
     </style>
@@ -36,27 +35,66 @@
 <body>
     <div class="report-card">
         <header>
-            <h1>📅 2026 공모전 주간 리포트</h1>
-            <div class="date-badge">4월 1주차 (서울·경기 중고등 대상)</div>
+            <h1>📅 전국 중고생 공모전 리포트 (D-Day순)</h1>
+            <div class="date-badge">2026. 04. 02 업데이트</div>
         </header>
 
         <div class="contest-item">
             <div class="item-header">
-                <div class="item-title">제4회 호국보훈 나라사랑 글짓기 대회</div>
-                <span class="status-tag status-urgent">내일 마감!</span>
+                <div class="item-title">지식재산처 '모두의 아이디어 공모' 캠페인</div>
+                <span class="d-day-tag">D-13</span>
             </div>
-            <div class="info-row"><div class="info-label">지원자격</div><div class="info-content">서울 마포구 관내 중학생 및 동일 연령</div></div>
-            <div class="info-row"><div class="info-label">상세소개</div><div class="info-content">시/산문 공모. 마포구청 홈페이지 고시공고란 참고.</div></div>
+            <div class="info-row"><div class="info-label">지원자격</div><div class="info-content">전국민 누구나 (청소년 부문 별도 운영)</div></div>
+            <div class="info-row"><div class="info-label">상세소개</div><div class="info-content">일상의 불편함을 해결하는 창의적 지식재산 아이디어를 공모합니다.</div></div>
             <div class="btn-group">
-                <a href="https://www.mapo.go.kr/site/main/board/notice/262521" class="apply-btn" target="_blank">🔗 상세 신청 페이지</a>
-                <a href="https://www.mapo.go.kr" class="main-btn" target="_blank">🏠 마포구청 홈</a>
+                <a href="https://www.idea.go.kr" class="apply-btn" target="_blank">🔗 상세 신청 페이지</a>
+                <a href="https://www.kipo.go.kr" class="main-btn" target="_blank">🏠 홈</a>
             </div>
         </div>
 
         <div class="contest-item">
             <div class="item-header">
-                <div class="item-title">2026 경기도 공공디자인 공모전</div>
-                <span class="status-tag status-ing">준비중</span>
+                <div class="item-title">행정안전부 제19회 기록사랑 공모전</div>
+                <span class="d-day-tag">D-28</span>
             </div>
-            <div class="info-row"><div class="info-label">지원자격</div><div class="info-content">전국 중·고등학생 (학생부 별도)</div></div>
-            <div class="info-row"><div class="info-label">상세소개</div><div class="info-content">'기후위기 대응' 디자인. 경기도 디자인허
+            <div class="info-row"><div class="info-label">지원자격</div><div class="info-content">전국 초·중·고등학생 및 성인</div></div>
+            <div class="info-row"><div class="info-label">상세소개</div><div class="info-content">글짓기, 그림, 동영상 분야에서 기록의 소중함을 담은 작품을 모집합니다.</div></div>
+            <div class="btn-group">
+                <a href="https://www.archives.go.kr" class="apply-btn" target="_blank">🔗 상세 신청 페이지</a>
+                <a href="https://www.archives.go.kr/next/viewMain.do" class="main-btn" target="_blank">🏠 홈</a>
+            </div>
+        </div>
+
+        <div class="contest-item">
+            <div class="item-header">
+                <div class="item-title">제4회 전국 청소년 드론축구 경진대회</div>
+                <span class="d-day-tag d-day-safe">D-35</span>
+            </div>
+            <div class="info-row"><div class="info-label">지원자격</div><div class="info-content">전국 초·중·고등학생 드론축구팀</div></div>
+            <div class="info-row"><div class="info-label">상세소개</div><div class="info-content">청소년들의 4차 산업 기술 체험을 위한 전국 단위 드론 축구 대회입니다.</div></div>
+            <div class="btn-group">
+                <a href="https://www.yangcheon.go.kr" class="apply-btn" target="_blank">🔗 상세 신청 페이지</a>
+                <a href="https://www.yangcheon.go.kr" class="main-btn" target="_blank">🏠 홈</a>
+            </div>
+        </div>
+
+        <div class="contest-item">
+            <div class="item-header">
+                <div class="item-title">2026 산업안전 아이디어·슬로건 공모전</div>
+                <span class="d-day-tag d-day-safe">D-57</span>
+            </div>
+            <div class="info-row"><div class="info-label">지원자격</div><div class="info-content">전국 중·고등학생 및 대학생</div></div>
+            <div class="info-row"><div class="info-label">상세소개</div><div class="info-content">안전한 일터를 만들기 위한 참신한 아이디어와 슬로건을 모집합니다.</div></div>
+            <div class="btn-group">
+                <a href="https://www.hscity.go.kr" class="apply-btn" target="_blank">🔗 상세 신청 페이지</a>
+                <a href="https://www.hscity.go.kr" class="main-btn" target="_blank">🏠 홈</a>
+            </div>
+        </div>
+
+        <p style="text-align: center; font-size: 0.8em; color: #999; margin-top: 50px;">
+            D-Day가 가까운 순서대로 정렬되었습니다. <br>
+            상세 페이지 로딩이 안 될 경우 '홈' 버튼을 이용해 주세요.
+        </p>
+    </div>
+</body>
+</html>
